@@ -10,7 +10,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
-**🚀 Live Demo:** [event-calendar-six.vercel.app](https://event-calender-29ucc7fug-mohanbalus-projects.vercel.app/) | **📖 Documentation:** [View Docs](https://github.com/Mohanbalu/EventCalendar/edit/main/DOCUMENTATION.md)
+**🚀 Live Demo:** [event-calendar-six.vercel.app](https://event-calendar-bay.vercel.app/) | **📖 Documentation:** [View Docs](https://github.com/Mohanbalu/EventCalendar/edit/main/DOCUMENTATION.md)
 
 </div>
 
@@ -480,7 +480,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Developer**: [Mohanbalu](https://github.com/Mohanbalu)  
 **Project**: [EventCalendar](https://github.com/Mohanbalu/EventCalendar)  
-**Live Demo**: [event-calendar-six.vercel.app](https://event-calender-29ucc7fug-mohanbalus-projects.vercel.app/)
+**Live Demo**: [event-calendar-six.vercel.app](https://event-calendar-bay.vercel.app/)
 
 ---
 
