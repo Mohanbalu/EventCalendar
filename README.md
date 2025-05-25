@@ -480,7 +480,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Developer**: [Mohanbalu](https://github.com/Mohanbalu)  
 **Project**: [EventCalender](https://github.com/Mohanbalu/EventCalender)  
-**Live Demo**: [event-calendar-six.vercel.app](https://event-calendar-six.vercel.app)
+**Live Demo**: [event-calendar-six.vercel.app](https://event-calender-29ucc7fug-mohanbalus-projects.vercel.app/)
 
 ---
 
