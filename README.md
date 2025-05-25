@@ -109,27 +109,100 @@ npm start
 
 ---
 
-## 📁 **Project Structure**
+## 📁 **Project Architecture**
+
+### **📂 Directory Structure**
 
 \`\`\`
-event-calendar/
-├── app/                    # Next.js App Router
-│   ├── globals.css         # Global styles
-│   ├── layout.tsx          # Root layout
-│   └── page.tsx            # Main page
-├── components/             # React components
-│   ├── calendar.tsx        # Main calendar component
-│   ├── event-form.tsx      # Event creation/editing
-│   ├── event-details.tsx   # Event details modal
-│   └── ui/                 # Reusable UI components
-├── hooks/                  # Custom React hooks
-│   ├── use-events.ts       # Event management logic
-│   └── use-responsive.ts   # Responsive utilities
-├── types/                  # TypeScript definitions
-│   └── event.ts            # Event-related types
-├── lib/                    # Utility functions
-│   └── utils.ts            # Helper functions
-└── public/                 # Static assets
+EventCalender/
+│
+├── 📁 app/                          # Next.js App Router
+│   ├── 🎨 globals.css               # Global styles and CSS variables
+│   ├── 🏠 layout.tsx                # Root layout component
+│   └── 📄 page.tsx                  # Main application page
+│
+├── 📁 components/                   # React Components
+│   ├── 🗓️ calendar.tsx              # Main calendar component
+│   ├── ✏️ event-form.tsx            # Event creation/editing form
+│   ├── 👁️ event-details.tsx         # Event details modal
+│   ├── 📱 mobile-navigation.tsx     # Mobile navigation component
+│   ├── 🎨 responsive-event-card.tsx # Responsive event cards
+│   ├── 📊 calendar-stats.tsx        # Calendar statistics
+│   ├── 📤 export-calendar.tsx       # Export functionality
+│   ├── ⚡ quick-add-event.tsx       # Quick event creation
+│   ├── 👆 touch-gestures.tsx        # Touch gesture handling
+│   └── 📁 ui/                       # Reusable UI Components
+│       ├── 🔘 button.tsx            # Button component
+│       ├── 📝 input.tsx             # Input component
+│       ├── 🏷️ label.tsx             # Label component
+│       ├── 📄 textarea.tsx          # Textarea component
+│       ├── 🪟 dialog.tsx            # Dialog/Modal component
+│       └── 📋 select.tsx            # Select dropdown component
+│
+├── 📁 hooks/                        # Custom React Hooks
+│   ├── 📅 use-events.ts             # Event management logic
+│   └── 📱 use-responsive.ts         # Responsive design utilities
+│
+├── 📁 types/                        # TypeScript Definitions
+│   └── 🎯 event.ts                  # Event-related type definitions
+│
+├── 📁 lib/                          # Utility Functions
+│   └── ⚡ utils.ts                  # Helper functions and utilities
+│
+├── 📁 public/                       # Static Assets
+│   └── 🖼️ (images, icons, etc.)
+│
+├── 📁 styles/                       # Additional Styles
+│   └── 🎨 (component-specific styles)
+│
+├── ⚙️ next.config.mjs               # Next.js configuration
+├── 🎨 tailwind.config.js            # Tailwind CSS configuration
+├── 📦 package.json                  # Project dependencies
+├── 🔧 tsconfig.json                 # TypeScript configuration
+├── 📋 components.json               # shadcn/ui configuration
+├── 🚫 .gitignore                    # Git ignore rules
+└── 📖 README.md                     # Project documentation
+\`\`\`
+
+### **🏗️ Component Architecture**
+
+\`\`\`
+┌─────────────────────────────────────────────────────────────┐
+│                        App Layout                           │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │                 Main Calendar                       │   │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐ │   │
+│  │  │   Header    │  │ Navigation  │  │   Stats     │ │   │
+│  │  └─────────────┘  └─────────────┘  └─────────────┘ │   │
+│  │  ┌─────────────────────────────────────────────────┐ │   │
+│  │  │            Calendar Grid                        │ │   │
+│  │  │  ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐      │ │   │
+│  │  │  │Event│ │Event│ │Event│ │Event│ │Event│ ...  │ │   │
+│  │  │  └─────┘ └─────┘ └─────┘ └─────┘ └─────┘      │ │   │
+│  │  └─────────────────────────────────────────────────┘ │   │
+│  └─────────────────────────────────────────────────────┘   │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │                    Modals                           │   │
+│  │  ┌─────────────┐  ┌─────────────┐                  │   │
+│  │  │ Event Form  │  │Event Details│                  │   │
+│  │  └─────────────┘  └─────────────┘                  │   │
+│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+\`\`\`
+
+### **🔄 Data Flow**
+
+\`\`\`
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│    User     │───▶│ Components  │───▶│   Hooks     │
+│ Interaction │    │             │    │             │
+└─────────────┘    └─────────────┘    └─────────────┘
+                           │                   │
+                           ▼                   ▼
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│    UI       │◀───│    State    │◀───│ Local       │
+│  Updates    │    │ Management  │    │ Storage     │
+└─────────────┘    └─────────────┘    └─────────────┘
 \`\`\`
 
 ---
