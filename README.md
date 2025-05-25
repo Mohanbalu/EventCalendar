@@ -10,7 +10,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
-**🚀 Live Demo:** [event-calendar-six.vercel.app](https://event-calendar-six.vercel.app) | **📖 Documentation:** [View Docs](#documentation)
+**🚀 Live Demo:** [event-calendar-six.vercel.app](https://event-calender-29ucc7fug-mohanbalus-projects.vercel.app/) | **📖 Documentation:** [View Docs](#documentation)
 
 </div>
 
@@ -111,52 +111,68 @@ npm start
 
 ## 📁 **Project Structure**
 
+<div align="center">
+
+### 🏗️ **Application Architecture**
+
+</div>
+
+<table>
+<tr>
+<td width="25%" align="center">
+
+### 📱 **App Router**
 \`\`\`
-event-calendar/
-│
-├── 📁 app/                          # Next.js App Router
-│   ├── globals.css                  # Global styles & Tailwind
-│   ├── layout.tsx                   # Root layout component
-│   └── page.tsx                     # Main application page
-│
-├── 📁 components/                   # React Components
-│   │
-│   ├── 📁 ui/                       # shadcn/ui Components
-│   │   ├── button.tsx               # Button component
-│   │   ├── input.tsx                # Input field component
-│   │   ├── label.tsx                # Label component
-│   │   ├── textarea.tsx             # Textarea component
-│   │   ├── dialog.tsx                # Modal/Dialog component
-│   │   └── select.tsx               # Select dropdown component
-│   │
-│   ├── calendar.tsx                 # 🗓️ Main calendar component
-│   ├── event-form.tsx               # ✏️ Event creation/editing form
-│   ├── event-details.tsx            # 👁️ Event details modal
-│   ├── calendar-stats.tsx           # 📊 Calendar statistics
-│   ├── export-calendar.tsx          # 📤 Export functionality
-│   ├── quick-add-event.tsx          # ⚡ Quick event creation
-│   ├── mobile-navigation.tsx        # 📱 Mobile navigation
-│   ├── responsive-event-card.tsx    # 🎨 Responsive event cards
-│   └── touch-gestures.tsx           # 👆 Touch gesture handling
-│
-├── 📁 hooks/                        # Custom React Hooks
-│   ├── use-events.ts                # Event management logic
-│   └── use-responsive.ts            # Responsive utilities
-│
-├── 📁 types/                        # TypeScript Definitions
-│   └── event.ts                     # Event-related types
-│
-├── 📁 lib/                          # Utility Functions
-│   └── utils.ts                     # Helper functions
-│
-├── 📁 public/                       # Static Assets
-│
-├── ⚙️ next.config.mjs               # Next.js configuration
-├── 🎨 tailwind.config.js            # Tailwind CSS config
-├── 📦 package.json                  # Dependencies
-├── 🔧 tsconfig.json                 # TypeScript config
-└── 📖 README.md                     # Documentation
+app/
+├── globals.css
+├── layout.tsx
+└── page.tsx
 \`\`\`
+*Next.js 15 App Router with global styles and main entry point*
+
+</td>
+<td width="25%" align="center">
+
+### 🧩 **Components**
+\`\`\`
+components/
+├── ui/ (6 files)
+├── calendar.tsx
+├── event-form.tsx
+├── event-details.tsx
+└── 6 more...
+\`\`\`
+*React components for UI and calendar functionality*
+
+</td>
+<td width="25%" align="center">
+
+### 🎣 **Hooks**
+\`\`\`
+hooks/
+├── use-events.ts
+└── use-responsive.ts
+\`\`\`
+*Custom React hooks for state management*
+
+</td>
+<td width="25%" align="center">
+
+### ⚙️ **Config**
+\`\`\`
+Root/
+├── next.config.mjs
+├── tailwind.config.js
+├── package.json
+└── tsconfig.json
+\`\`\`
+*Configuration files and dependencies*
+
+</td>
+</tr>
+</table>
+
+---
 ### **Key Directories**
 
 | Directory | Purpose |
