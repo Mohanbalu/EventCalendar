@@ -10,7 +10,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
-**🚀 Live Demo:** [event-calendar-six.vercel.app](https://event-calender-29ucc7fug-mohanbalus-projects.vercel.app/) | **📖 Documentation:** [View Docs](#documentation)
+**🚀 Live Demo:** [event-calendar-six.vercel.app](https://event-calender-29ucc7fug-mohanbalus-projects.vercel.app/) | **📖 Documentation:** [View Docs](https://github.com/Mohanbalu/EventCalender/edit/main/DOCUMENTATION.md)
 
 </div>
 
