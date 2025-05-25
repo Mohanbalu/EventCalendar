@@ -10,7 +10,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
-**🚀 Live Demo:** [event-calendar-six.vercel.app](https://event-calender-29ucc7fug-mohanbalus-projects.vercel.app/) | **📖 Documentation:** [View Docs](#documentation)
+**🚀 Live Demo:** [event-calendar-six.vercel.app](https://event-calendar-six.vercel.app) | **📖 Documentation:** [View Docs](#documentation)
 
 </div>
 
@@ -109,63 +109,80 @@ npm start
 
 ---
 
-## 📁 **Project Structure**
+## 🏗️ **Project Architecture**
 
 <div align="center">
 
-### 🏗️ **Application Architecture**
+### 🎨 **Creative File Explorer**
 
 </div>
 
 <table>
 <tr>
-<td width="25%" align="center">
+<td colspan="4" align="center">
+<h3>🗂️ <strong>event-calendar/</strong></h3>
+<em>Modern Next.js Calendar Application</em>
+</td>
+</tr>
+</table>
 
-### 📱 **App Router**
+<table>
+<tr>
+<td width="25%" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px;">
+
+### 🚀 **App Router**
 \`\`\`
-app/
-├── globals.css
-├── layout.tsx
-└── page.tsx
+📁 app/
+├── 🎨 globals.css
+├── 🏠 layout.tsx
+└── 📄 page.tsx
 \`\`\`
-*Next.js 15 App Router with global styles and main entry point*
+
+**Next.js 15 App Router**  
+*Modern routing with global styles and main entry point*
 
 </td>
-<td width="25%" align="center">
+<td width="25%" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 20px; border-radius: 10px;">
 
 ### 🧩 **Components**
 \`\`\`
-components/
-├── ui/ (6 files)
-├── calendar.tsx
-├── event-form.tsx
-├── event-details.tsx
-└── 6 more...
+📁 components/
+├── 🎛️ ui/ (6 files)
+├── 📅 calendar.tsx
+├── ✏️ event-form.tsx
+├── 👁️ event-details.tsx
+└── 📱 6 more files...
 \`\`\`
-*React components for UI and calendar functionality*
+
+**React Components**  
+*UI building blocks and calendar functionality*
 
 </td>
-<td width="25%" align="center">
+<td width="25%" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 20px; border-radius: 10px;">
 
 ### 🎣 **Hooks**
 \`\`\`
-hooks/
-├── use-events.ts
-└── use-responsive.ts
+📁 hooks/
+├── 🔄 use-events.ts
+└── 📱 use-responsive.ts
 \`\`\`
-*Custom React hooks for state management*
+
+**Custom React Hooks**  
+*State management and reusable logic*
 
 </td>
-<td width="25%" align="center">
+<td width="25%" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; padding: 20px; border-radius: 10px;">
 
-### ⚙️ **Config**
+### ⚙️ **Configuration**
 \`\`\`
-Root/
-├── next.config.mjs
-├── tailwind.config.js
-├── package.json
-└── tsconfig.json
+📁 root/
+├── ⚡ next.config.mjs
+├── 🎨 tailwind.config.js
+├── 📦 package.json
+└── 🔧 tsconfig.json
 \`\`\`
+
+**Project Setup**  
 *Configuration files and dependencies*
 
 </td>
@@ -173,43 +190,111 @@ Root/
 </table>
 
 ---
-### **Key Directories**
 
-| Directory | Purpose |
-|-----------|---------|
-| `app/` | Next.js App Router files |
-| `components/` | React components |
-| `components/ui/` | Reusable UI components |
-| `hooks/` | Custom React hooks |
-| `types/` | TypeScript type definitions |
-| `lib/` | Utility functions |
-| `public/` | Static assets |
+### 🎭 **Component Gallery**
 
-### **Core Components**
+<table>
+<tr>
+<td width="33%" align="center" style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
 
-| Component | Description |
-|-----------|-------------|
-| `calendar.tsx` | Main calendar component with all views |
-| `event-form.tsx` | Event creation and editing form |
-| `event-details.tsx` | Event details modal |
-| `calendar-stats.tsx` | Calendar statistics display |
-| `export-calendar.tsx` | Export functionality |
-| `quick-add-event.tsx` | Quick event creation |
+#### 🎨 **UI Components**
+\`\`\`
+components/ui/
+├── 🔘 button.tsx
+├── 📝 input.tsx  
+├── 🏷️ label.tsx
+├── 📄 textarea.tsx
+├── 🪟 dialog.tsx
+└── 📋 select.tsx
+\`\`\`
+*shadcn/ui building blocks*
 
-### **🔄 Data Flow**
+</td>
+<td width="33%" align="center" style="background: #e3f2fd; padding: 15px; border-radius: 8px;">
+
+#### 📅 **Calendar Core**
+\`\`\`
+components/
+├── 🗓️ calendar.tsx
+├── ✏️ event-form.tsx
+├── 👁️ event-details.tsx
+├── 📊 calendar-stats.tsx
+├── 📤 export-calendar.tsx
+└── ⚡ quick-add-event.tsx
+\`\`\`
+*Main calendar functionality*
+
+</td>
+<td width="33%" align="center" style="background: #f3e5f5; padding: 15px; border-radius: 8px;">
+
+#### 📱 **Mobile Features**
+\`\`\`
+components/
+├── 📱 mobile-navigation.tsx
+├── 🎨 responsive-event-card.tsx
+└── 👆 touch-gestures.tsx
+\`\`\`
+*Mobile-optimized components*
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🌊 **Data Flow Visualization**
+
+<div align="center">
 
 \`\`\`
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│    User     │───▶│ Components  │───▶│   Hooks     │
-│ Interaction │    │             │    │             │
-└─────────────┘    └─────────────┘    └─────────────┘
-                           │                   │
-                           ▼                   ▼
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│    UI       │◀───│    State    │◀───│ Local       │
-│  Updates    │    │ Management  │    │ Storage     │
-└─────────────┘    └─────────────┘    └─────────────┘
+    👤 User
+      ↓
+  🎨 Components ←→ 🎣 Hooks ←→ 💾 Storage
+      ↓              ↓
+  🔄 State ←→ 📱 Responsive
 \`\`\`
+
+</div>
+
+<table>
+<tr>
+<td width="20%" align="center" style="background: #e8f5e8; padding: 10px; border-radius: 5px;">
+<strong>👤 User</strong><br/>
+<em>Interactions</em>
+</td>
+<td width="20%" align="center" style="background: #f3e5f5; padding: 10px; border-radius: 5px;">
+<strong>🎨 Components</strong><br/>
+<em>UI Layer</em>
+</td>
+<td width="20%" align="center" style="background: #e3f2fd; padding: 10px; border-radius: 5px;">
+<strong>🎣 Hooks</strong><br/>
+<em>Logic Layer</em>
+</td>
+<td width="20%" align="center" style="background: #fff3e0; padding: 10px; border-radius: 5px;">
+<strong>💾 Storage</strong><br/>
+<em>Data Layer</em>
+</td>
+<td width="20%" align="center" style="background: #fce4ec; padding: 10px; border-radius: 5px;">
+<strong>🔄 State</strong><br/>
+<em>Management</em>
+</td>
+</tr>
+</table>
+
+---
+
+### 🎯 **Key Files Spotlight**
+
+<div align="center">
+
+| 🌟 **Core File** | 🎯 **Purpose** | 📍 **Location** |
+|:---:|:---:|:---:|
+| **🏠 page.tsx** | Application entry point | `app/page.tsx` |
+| **📅 calendar.tsx** | Main calendar component | `components/calendar.tsx` |
+| **🎣 use-events.ts** | Event management logic | `hooks/use-events.ts` |
+| **🔧 event.ts** | TypeScript definitions | `types/event.ts` |
+
+</div>
 
 ---
 
