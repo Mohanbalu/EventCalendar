@@ -113,42 +113,50 @@ npm start
 
 \`\`\`
 event-calendar/
-├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── ui/
-│   │   ├── button.tsx
-│   │   ├── input.tsx
-│   │   ├── label.tsx
-│   │   ├── textarea.tsx
-│   │   ├── dialog.tsx
-│   │   └── select.tsx
-│   ├── calendar.tsx
-│   ├── event-form.tsx
-│   ├── event-details.tsx
-│   ├── calendar-stats.tsx
-│   ├── export-calendar.tsx
-│   ├── quick-add-event.tsx
-│   ├── mobile-navigation.tsx
-│   ├── responsive-event-card.tsx
-│   └── touch-gestures.tsx
-├── hooks/
-│   ├── use-events.ts
-│   └── use-responsive.ts
-├── types/
-│   └── event.ts
-├── lib/
-│   └── utils.ts
-├── public/
-├── next.config.mjs
-├── tailwind.config.js
-├── package.json
-├── tsconfig.json
-└── README.md
+│
+├── 📁 app/                          # Next.js App Router
+│   ├── globals.css                  # Global styles & Tailwind
+│   ├── layout.tsx                   # Root layout component
+│   └── page.tsx                     # Main application page
+│
+├── 📁 components/                   # React Components
+│   │
+│   ├── 📁 ui/                       # shadcn/ui Components
+│   │   ├── button.tsx               # Button component
+│   │   ├── input.tsx                # Input field component
+│   │   ├── label.tsx                # Label component
+│   │   ├── textarea.tsx             # Textarea component
+│   │   ├── dialog.tsx                # Modal/Dialog component
+│   │   └── select.tsx               # Select dropdown component
+│   │
+│   ├── calendar.tsx                 # 🗓️ Main calendar component
+│   ├── event-form.tsx               # ✏️ Event creation/editing form
+│   ├── event-details.tsx            # 👁️ Event details modal
+│   ├── calendar-stats.tsx           # 📊 Calendar statistics
+│   ├── export-calendar.tsx          # 📤 Export functionality
+│   ├── quick-add-event.tsx          # ⚡ Quick event creation
+│   ├── mobile-navigation.tsx        # 📱 Mobile navigation
+│   ├── responsive-event-card.tsx    # 🎨 Responsive event cards
+│   └── touch-gestures.tsx           # 👆 Touch gesture handling
+│
+├── 📁 hooks/                        # Custom React Hooks
+│   ├── use-events.ts                # Event management logic
+│   └── use-responsive.ts            # Responsive utilities
+│
+├── 📁 types/                        # TypeScript Definitions
+│   └── event.ts                     # Event-related types
+│
+├── 📁 lib/                          # Utility Functions
+│   └── utils.ts                     # Helper functions
+│
+├── 📁 public/                       # Static Assets
+│
+├── ⚙️ next.config.mjs               # Next.js configuration
+├── 🎨 tailwind.config.js            # Tailwind CSS config
+├── 📦 package.json                  # Dependencies
+├── 🔧 tsconfig.json                 # TypeScript config
+└── 📖 README.md                     # Documentation
 \`\`\`
-
 ### **Key Directories**
 
 | Directory | Purpose |
